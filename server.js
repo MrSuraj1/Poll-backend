@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 // ✅ IMPORTANT
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://tubular-toffee-00fbbf.netlify.app/",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
