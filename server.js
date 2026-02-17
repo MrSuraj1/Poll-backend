@@ -3,6 +3,7 @@ const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
+const pollRoutes = require("./Routes/pollroute");
 
 const app = express();
 const server = http.createServer(app);
@@ -36,7 +37,6 @@ app.get("/", (req, res) => {
 });
 
 // ⚠️ IMPORTANT — Make sure this exists
-const pollRoutes = require("./routes/pollRoute");
 app.use("/api/polls", pollRoutes);
 
 
