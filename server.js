@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 // ✅ IMPORTANT
 app.use(cors({
-  origin: "https://tubular-toffee-00fbbf.netlify.app/",
+  origin: "https://tubular-toffee-00fbbf.netlify.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
